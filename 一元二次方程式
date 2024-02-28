@@ -1,0 +1,12 @@
+print('請輸入ax^2+bx+c=0中的abc')
+a=float(input('a='))
+b=float(input('b='))
+c=float(input('c='))
+ans1=(-1*b+((b**2-4*a*c)**(1/2)))/(2*a)
+ans2=(-1*b-((b**2-4*a*c)**(1/2)))/(2*a)
+if (b**2-4*a*c)<0:
+    print('此',a,'x^2+',b,'x+',c,'=0','無解')
+elif ans1==ans2:
+    print(ans1,'是此',a,'x^2+',b,'x+',c,'=0 的解')
+elif ans1!=ans2:
+    print(ans1,'跟',ans2,'是此',a,'x^2+',b,'x+',c,'=0 的解')
